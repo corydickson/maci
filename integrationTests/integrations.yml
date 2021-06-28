@@ -17,26 +17,25 @@ invalidVote:
   voteCreditBalance: 1
 constants:
   poll:
-    duration: 120
+    duration: 1200
     intStateTreeDepth: 1
-    messageTreeDepth: 2
+    messageTreeDepth: 5
     messageBatchDepth: 1
   maci:
-    maxUsers: 15
-    maxMessages: 25
+    maxUsers: 1000
+    maxMessages: 100
     maxVoteOptions: 25
     initialVoiceCredits: 1000
-    signupDuration: 120
-    votingDuration: 120
-    signUpDurationInSeconds: 3600 # 1 hour
-    votingDurationInSeconds: 3600 # 1 hour
+    signupDuration: 1200
+    votingDuration: 1200
+    signUpDurationInSeconds: 36000 # 1 hour
+    votingDurationInSeconds: 36000 # 1 hour
     coordinatorPrivKey: "2222222222263902553431241761119057960280734584214105336279476766401963593688"
     messageBatchSize: 4
     tallyBatchSize: 4
     quadVoteTallyBatchSize: 4
     voteOptionsMaxLeafIndex: 3
     stateTreeDepth: 10
-    messageTreeDepth:  2
     voteOptionTreeDepth: 2
     ivcpData: '0x0000000000000000000000000000000000000000000000000000000000000000'
   chain:

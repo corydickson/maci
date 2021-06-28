@@ -69,7 +69,7 @@ contract PollFactory is Params, IPubKey, IMessage, Ownable, Hasher, PollDeployme
         // maxVoteOptions must be less than 2 ** 50 due to circuit limitations;
         // it will be packed as a 50-bit value along with other values as one
         // of the inputs (aka packedVal)
-
+        /*
         require(
             _maxValues.maxMessages <= treeArity ** _treeDepths.messageTreeDepth &&
             _maxValues.maxMessages >= _batchSizes.messageBatchSize &&
@@ -78,6 +78,7 @@ contract PollFactory is Params, IPubKey, IMessage, Ownable, Hasher, PollDeployme
             _maxValues.maxVoteOptions < (2 ** 50),
             "PollFactory: invalid _maxValues"
         );
+       */
 
         AccQueue messageAq =
             messageAqFactory.deploy(_treeDepths.messageTreeSubDepth);

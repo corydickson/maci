@@ -37,6 +37,13 @@
             "expectedTally": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             "expectedSpentVoiceCredits": [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             "expectedTotalSpentVoiceCredits": 1
+        },
+        {
+            "name": "Happy path large batch",
+            "description": "Full tree large tally",
+            "numUsers": 100,
+            "numVotesPerUser": 2,
+            "expectedTotalSpentVoiceCredits": 10
         }
     ]
 }
